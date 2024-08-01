@@ -21,8 +21,6 @@
     margin: 0;
     padding: 0;
     color: #ffffff;
-   
-   
 
 }
 
@@ -32,7 +30,7 @@
 }
 
 .btn-cmn{
-    font-size: 1.2rem;
+    font-size:1.5 rem;
     color: #ffffff;
     padding: 16px 40px;
     border-radius: 42px ;
@@ -109,6 +107,7 @@ header{
 
 .banner-description{
     margin-top: 30px;
+    text-wrap: wrap;
 }
 .banner-shape{
     font-family: offline-font;
@@ -200,12 +199,54 @@ body{
     margin: 0 auto;
     padding: 30px;
 }
+/* Run an Extra Mile Easily */
+
+/* .run{
+ 
+
+} */
+.run{
+    background-color: rgb(34, 34, 34, 0.8);
+    border-radius: 20px;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    margin: 50px auto;
+}
+.run-info> h2, p,button{
+    margin-bottom: 30px;
+}
+.run-info h2{
+    font-size: 3em;
+}
+.run-info p{
+    text-wrap: wrap;
+    justify-content: space-between;
+}
+.run-info button{
+    background-color:#EC563E ;
+    border: none;
+    font-size: 1.13rem;
+}
+.run-images{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.run-images img{
+   width: 30vw;
+   border-radius: 20px;
+}
+
 
 /* Change your Habits section */
 .container-1 {
     flex-direction: column;
     flex-wrap: wrap;
     padding: 10px;
+    margin: 30px auto;
 }
 
 .container-1 p {
@@ -373,6 +414,9 @@ gap: 30px;
 .get-Start-title{
     font-size: 1.8rem;
 }
+.footer-description{
+    text-wrap: wrap;
+}
 .get-started-items{
     margin-top: 20px;
 }
@@ -387,6 +431,62 @@ gap: 30px;
 .copyright{
     text-align: center;
     margin-top: 30px;
+}
+
+
+                        /* RESPONSIVE */
+
+
+
+/* Change Your Habits responsive*/
+
+@media screen and (max-width:576px) {
+    
+.container-1 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.container-1 p {
+    text-align: center;
+    text-transform: capitalize;
+    text-wrap: wrap;
+    margin-top: 5px;
+}
+.container-1 h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+.container-1 h3 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.13;
+}
+
+.changes-profile-element {
+    flex-direction: column;
+}
+
+.changes-profile-element div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.changes-profile-element img{
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border:2px solid rgb(255, 255, 255, 40%);   
+    
+}
+.change-profile-2-info, .change-profile-3-info, .change-profile-4-info{
+    margin-left: 40px;
+}
+    
 }
 
 /* footer responsive */
@@ -409,9 +509,9 @@ gap: 30px;
         font-size: 3rem;
         font-style: italic;
     }
-    /* .footer-description{
-    
-    } */
+    .footer-description{
+        text-wrap: wrap;
+    }
     
     .get-Start-title{
         font-size: 1.5rem;
