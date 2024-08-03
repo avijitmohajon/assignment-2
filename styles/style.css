@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: offline-Font;
-    src: url(/font/miama/Miama.ttf);
+    src: url(../font/miama/Miama.ttf);
   }
 
 
@@ -199,47 +199,6 @@ body{
     margin: 0 auto;
     padding: 30px;
 }
-/* Run an Extra Mile Easily */
-
-/* .run{
- 
-
-} */
-.run{
-    background-color: rgb(34, 34, 34, 0.8);
-    border-radius: 20px;
-    justify-content:space-between ;
-    align-items: center;
-    padding: 30px;
-    gap: 30px;
-    margin: 50px auto;
-}
-.run-info> h2, p,button{
-    margin-bottom: 30px;
-}
-.run-info h2{
-    font-size: 3em;
-}
-.run-info p{
-    text-wrap: wrap;
-    justify-content: space-between;
-}
-.run-info button{
-    background-color:#EC563E ;
-    border: none;
-    font-size: 1.13rem;
-}
-.run-images{
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-}
-
-.run-images img{
-   width: 30vw;
-   border-radius: 20px;
-}
-
 
 /* Change your Habits section */
 .container-1 {
@@ -282,6 +241,46 @@ body{
 }
 .change-profile-2-info, .change-profile-3-info, .change-profile-4-info{
     margin-left: 40px;
+}
+
+/* Run an Extra Mile Easily */
+
+.run{
+    background-color: rgb(34, 34, 34, 0.8);
+    border-radius: 20px;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    margin: 50px auto;
+}
+.run-info> h2, p,button{
+    margin-bottom: 30px;
+}
+.run-info h2{
+    font-size: 3em;
+}
+.run-info p{
+    text-wrap: wrap;
+    justify-content: space-between;
+}
+.run-info button{
+    background-color:#EC563E ;
+    border: none;
+    font-size: 1.13rem;
+}
+.run-images{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.run-images img{
+   width: 600px;
+   border-radius: 18px;
+   object-fit: none;
+   object-position: 70% 35%;
 }
 
 
@@ -486,7 +485,47 @@ gap: 30px;
 .change-profile-2-info, .change-profile-3-info, .change-profile-4-info{
     margin-left: 40px;
 }
-    
+
+
+/* Run an Extra Mile Easily responsive */
+
+.run{
+    background-color: rgb(34, 34, 34, 0.8);
+    border-radius: 20px;
+    justify-content:space-evenly ;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    margin: 50px auto;
+    flex-direction: column;
+}
+.run-info> h2, p,button{
+    margin-bottom: 30px;
+}
+.run-info h2{
+    font-size: 2em;
+}
+.run-info p{
+    text-wrap: wrap;
+    font-size: 14px;
+}
+.run-info button{
+    background-color:#EC563E ;
+    border: none;
+    font-size: 1rem;
+}
+.run-images{
+    width: 100%;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+
+.run-images img{
+   border-radius: 18px;
+   transform: scale(0.6) translateY(-100px);
+}
+
 }
 
 /* footer responsive */
