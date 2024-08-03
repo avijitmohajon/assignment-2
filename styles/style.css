@@ -240,8 +240,8 @@ body{
     
 }
 .change-profile-2-info, .change-profile-3-info, .change-profile-4-info{
-    margin-left: 40px;
-}
+    padding: 20px;
+} 
 
 /* Run an Extra Mile Easily */
 
@@ -437,14 +437,16 @@ gap: 30px;
 
 
 
-/* Change Your Habits responsive*/
+
 
 @media screen and (max-width:576px) {
-    
+    /* Change Your Habits responsive*/
 .container-1 {
     flex-direction: column;
     flex-wrap: wrap;
     padding: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-1 p {
@@ -466,6 +468,8 @@ gap: 30px;
 
 .changes-profile-element {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .changes-profile-element div{
@@ -482,9 +486,6 @@ gap: 30px;
     border:2px solid rgb(255, 255, 255, 40%);   
     
 }
-.change-profile-2-info, .change-profile-3-info, .change-profile-4-info{
-    margin-left: 40px;
-}
 
 
 /* Run an Extra Mile Easily responsive */
@@ -499,8 +500,17 @@ gap: 30px;
     margin: 50px auto;
     flex-direction: column;
 }
+.run-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .run-info> h2, p,button{
     margin-bottom: 30px;
+    
+
+   
 }
 .run-info h2{
     font-size: 2em;
@@ -516,8 +526,8 @@ gap: 30px;
 }
 .run-images{
     width: 100%;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
 
 }
 
