@@ -394,8 +394,7 @@ body{
         /* class schedule */
 
 .container-6 {
-    background: linear-gradient(rgba(18, 28, 22, 0.819), rgba(36, 106, 143, 0.488)), 
-    url('/images/zym2.jpg')center center/cover ;
+    background: linear-gradient(rgba(35, 65, 47, 0.819), rgba(36, 106, 143, 0.488)),     url('../images/zym2.jpg')center center/cover ;
     max-width: 1440px;
     margin: 0 auto;
     padding: 30px;
@@ -437,19 +436,18 @@ body{
     color: #ffffff;
 }
 .data>table{
-    max-height: 100%;
+    height: 20vh;
     width: 100%;
 }
-.data>table, tr{
+
+.data table,tr{
     border: 1px solid white;
     border-collapse: collapse;
-    height: 50px;
-}
-
-.data>table tr>td{
+} 
+.data table tr td{
     text-align:center;
     text-transform: uppercase;
-    padding: 0px 20px ;
+    padding: 0px 20px;
 }
 .td-btn>button{
     background-color: #EC563E;
@@ -461,6 +459,7 @@ body{
     text-transform: capitalize;
     
 }
+
 
 /* Footer styles */
 
@@ -608,10 +607,10 @@ gap: 30px;
    border-radius: 18px;
    transform: scale(0.6) translateY(-100px);
 }
+}
 
-
-
-
+@media screen and ( max-width: 576px){
+    
         /* class schedule responsive */
 
 .container-6 {
@@ -628,25 +627,25 @@ gap: 30px;
 
 }
 .container-6>h2{
-    /* text-align: center; */
+    text-align: start;
     text-transform: uppercase;
     font-size: 2rem;
     word-spacing: 10px;
 }
 .days-info{
     display:grid;
-    grid-template-columns: repeat(7,1fr);
-    /* text-align: start; */
-    column-gap: 10px;
-    font-size: 0.5rem;
-    margin: 20px 0px;
+    grid-template-columns:repeat(7,1fr);
+    font-size: 0.6rem;
+    margin: 10px 0px;
 }
 .day a{
     text-decoration: none;
     text-transform:uppercase;
     background-color: #ffffff;
     color: #000000;
-    padding: 5px 5px;
+    padding: 2px;
+    margin: 0px;
+    font-weight: bold;
 }
 .sun a{
     border-radius: 15px 0px 0px 15px;
@@ -659,8 +658,8 @@ gap: 30px;
     color: #ffffff;
 }
 .data>table{
-    height: 100%;
-    width: 100%;
+    height: 20vh;
+    width:100%;
 }
 .data>table, tr{
     border: 1px solid white;
@@ -677,21 +676,13 @@ gap: 30px;
 .td-btn>button{
     background-color: #EC563E;
     border: none;
-    font-size:0.7rem;
+    font-size:0.6rem;
     color: #ffffff;
-    padding: 4px 20px;
+    padding: 4px 5px;
     border-radius: 15px ;
-    text-transform: capitalize;
     
 }
-
-
-
-
-
 }
-
-
 
 
 /* footer responsive */
