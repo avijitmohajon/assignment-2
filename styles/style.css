@@ -88,7 +88,9 @@ header{
     border-radius: 25px;
     font-weight: bolder;
 }
-
+.nav-icon{
+    display: none;
+}
 /* Banner styles */
 
 .banner{
@@ -509,6 +511,119 @@ gap: 30px;
 
 
 @media screen and (max-width:576px) {
+    /* Header responsive */
+
+    header{
+        background: linear-gradient(to bottom, rgb(17, 17, 17,1), rgb(119, 119,119,0.2)); 
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 30px 30px 0px 30px;
+    
+      }
+    
+    /* Navbar responsive*/
+    
+    .navbar{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-title{
+     color: #EC563E;
+     font-size: 2.5rem;
+     font-style: italic;
+     font-weight: 900;
+    }
+    
+    .nav-items{
+        display: none;
+        border: 2px solid rgb(49, 49, 49);
+        padding: 19px 8px;
+        border-radius:35px;
+        gap: 30px;
+        
+    }
+    .nav-item{
+        list-style: none;    
+    }
+    
+    .nav-link{
+        text-decoration: none;
+        
+    }
+    .home-link{
+        background-color: #EC563E;
+        padding: 15px 28px;
+        border-radius: 25px;
+        font-weight: bolder;
+    }
+    .nav-icon{
+        display:flex;
+        flex-direction: column;
+        height: 80px;
+        gap: 3px;
+    }
+    .nav-icon hr{
+        width: 35px;
+        height: 1px;
+        transform:translateY(30px);
+    }
+    /* Banner styles responsive */
+    
+    .banner{
+        /* align-items: center; */
+        justify-content: space-between;
+        flex-direction: column;
+    
+    }
+    .banner-info{
+        flex-direction: column;
+    }
+    
+    .banner-title{
+        font-size: 3rem;
+        line-height: 120%;
+    }
+    
+    .banner-description{
+        margin-top: 30px;
+        text-wrap: wrap;
+    }
+    .banner-shape{
+        font-family: offline-font;
+        font-size: 6rem;
+        font-weight: 200;
+    }
+    
+    .banner-btn{
+        margin-top: 10px;
+        display: flex;
+        gap: 30px;
+        /* justify-content: center */
+        align-items: center;
+       
+    
+    }
+    .btn-join{
+        background-color:#EC563E ;
+        border: none;
+        font-size: 1rem;
+        padding: 10px 15px;
+        border-radius: 25px;
+        
+    }
+    
+    .btn-download{
+        background: none;
+        border: 1px solid #ffffff;
+        font-size: 1rem;
+        padding: 10px 15px;
+        border-radius: 25px;
+    }
+    
+    .banner-img{
+        position: relative;
+        margin-right: 100px;
+    }
     /* Change Your Habits responsive*/
 .container-1 {
     flex-direction: column;
@@ -661,11 +776,9 @@ gap: 30px;
     display: inline-block;
     background:none;
     color: #ffffff;
-    border:none;
-    border-color: none;
     margin-bottom: 10px;
     padding: 10px 10px;
-    width: 200px;
+    width: 42%;
     height: 20px;
     text-align: left;
     background-color: rgba(255, 255, 255, 0.135);
@@ -682,7 +795,7 @@ gap: 30px;
 
 .bmi-select{
     display: inline-block;
-    width: 40%;
+    width: 47%;
     height: 40px;
     padding: 10px 10px;
     background-color: rgba(255, 255, 255, 0.135);
@@ -706,7 +819,7 @@ gap: 30px;
     font-size: 1rem;
 }
 .bmi-activity{
-    width: 95%;
+    width: 97%;
 }
 .bmi-btn{
     background-color: #EC563E;
@@ -742,8 +855,8 @@ gap: 30px;
     display:grid;
     grid-template-columns:repeat(4,80px);
     row-gap: 10px;
-    font-size: 0.6rem;
-    text-align: start;
+    font-size: 0.7rem;
+    text-align: justify;
     margin: 10px 0px;
 }
 .day a{
@@ -786,10 +899,11 @@ gap: 30px;
 .td-btn>button{
     background-color: #EC563E;
     border: none;
-    font-size:0.9rem;
+    font-size:0.7rem;
     color: #ffffff;
     border-radius: 10px ;
     text-transform: capitalize;
+    padding: 1px 10px;
     
 }
 }
