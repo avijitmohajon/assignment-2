@@ -287,7 +287,16 @@ body{
 }
 
 /* Bmi section */
-
+.container-4{
+    margin-bottom: 100px;
+}
+.container-4>h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.container-4>p{
+    text-align: center;
+}
 .bmi{
     background-color: #4747479a;
     justify-content: space-evenly;
@@ -295,6 +304,7 @@ body{
     max-width: 1440px;
     margin: 0 auto;
     padding: 30px;
+    border-radius: 25px;
 }
 .bmi-chart{
     flex-direction: column;
@@ -393,7 +403,7 @@ body{
 
         /* class schedule */
 
-.container-6 {
+.container-3 {
     background: linear-gradient(rgba(35, 65, 47, 0.819), rgba(36, 106, 143, 0.488)),     url('../images/zym2.jpg')center center/cover ;
     max-width: 1440px;
     margin: 0 auto;
@@ -403,9 +413,11 @@ body{
     justify-content: center;
     gap: 5vh;
     padding: 80px 50px;
+    border-radius: 25px;
+    margin-bottom: 100px;
 
 }
-.container-6>h2{
+.container-3>h2{
     text-align: center;
     text-transform: uppercase;
     font-size: 3rem;
@@ -460,7 +472,50 @@ body{
     
 }
 
-
+/*  Meet Our Team */
+.container-5{
+ margin-top: 100px;
+ margin-bottom: 100px;
+}
+.container-5>h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.container-5>p{
+    text-align: center;
+    text-transform: capitalize;
+}
+.team-images{
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    gap: 50px;
+    flex-direction: column;
+}
+.grp-1{
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+.grp-2{
+    height:300px;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+.trainer-image{
+    align-items: center;
+    justify-items: center;
+}
+.trainer-image>img{
+    align-self: center;
+    justify-self: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 10%;
+    margin: 10px;
+}
 /* Footer styles */
 
 footer{
@@ -907,7 +962,7 @@ border-radius: 50px;
     
         /* class schedule responsive */
 
-.container-6 {
+.container-3 {
     background: linear-gradient(rgba(18, 28, 22, 0.819), rgba(36, 106, 143, 0.488)), 
     url('/images/zym2.jpg')center center/cover ;
     max-width: 1440px;
@@ -920,7 +975,7 @@ border-radius: 50px;
     padding: 50px 10px;
 
 }
-.container-6>h2{
+.container-3>h2{
     text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
@@ -981,6 +1036,48 @@ border-radius: 50px;
     padding: 1px 10px;
     
 }
+
+/*  Meet Our Team */
+.container-5{
+    margin-top: 100px;
+    margin-bottom: 100px;
+   }
+   .container-5>h2{
+       font-size: 3rem;
+       text-align: center;
+   }
+   .container-5>p{
+       text-align: center;
+       text-transform: capitalize;
+   }
+   .team-images{
+       align-items: center;
+       justify-content: center;
+       width: 100%;
+       gap: 50px;
+       flex-direction: column;
+   }
+   .grp-1{ 
+        flex-direction: column;
+        height: auto;
+       width: 100%;
+       align-items: center;
+       justify-items: center;
+   }
+   .grp-2{
+       flex-direction: column;
+       height:auto;
+       width: 100%;
+       align-items: center;
+       justify-items: center;
+   }
+   .trainer-image>img{
+       height: 300px;
+       width: 300px;
+       border-radius: 10%;
+       margin: 10px;
+   }
+
 }
 
 
