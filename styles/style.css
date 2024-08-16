@@ -50,6 +50,7 @@ header{
     max-width: 1440px;
     margin: 0 auto;
     padding: 30px 30px 0px 30px;
+    border-radius: 15px 15px 15px 15px;
 
   }
 
@@ -517,8 +518,7 @@ gap: 30px;
         background: linear-gradient(to bottom, rgb(17, 17, 17,1), rgb(119, 119,119,0.2)); 
         max-width: 1440px;
         margin: 0 auto;
-        padding: 30px 30px 0px 30px;
-    
+        padding: 30px 20px 0px 20px;
       }
     
     /* Navbar responsive*/
@@ -598,10 +598,8 @@ gap: 30px;
         margin-top: 10px;
         display: flex;
         gap: 30px;
-        /* justify-content: center */
+        justify-content: center;
         align-items: center;
-       
-    
     }
     .btn-join{
         background-color:#EC563E ;
@@ -622,8 +620,81 @@ gap: 30px;
     
     .banner-img{
         position: relative;
-        margin-right: 100px;
+        margin-right:0px;
+        align-self: start;
+        justify-self: start;
+        margin-bottom: 5px;
+        
     }
+    .banner-img img{
+        height: 50%;
+        width: 100%;
+        object-fit: none;
+        object-position: 85% -100%;
+    }
+            /* banner relative common */
+.banner-video-tutorial{
+    position: absolute;
+    top: 830px;
+    left: 55px;
+    border: 1px solid #343434 ;
+    padding: 10px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 160px;
+    gap: 10px;
+    backdrop-filter: blur(10px);
+} 
+
+.circle{
+background-color: #EC563E;
+padding: 20px;
+border-radius: 50px;
+}
+.triangle{
+    display: inline-block;
+    position: absolute;
+    width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-left: 20px solid #ffffff;
+	border-bottom: 10px solid transparent;
+    left: 30px;
+}
+.banner-video-info{
+    text-align: center;
+    flex-direction: column;
+    
+}
+.banner-video-title{
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.banner-free-workout{
+    position: absolute;
+    top: 640px;
+    left: 230px;
+    border: 1px solid #343434 ;
+    padding: 10px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 130px;
+    gap: 10px;
+    backdrop-filter: blur(10px);
+}
+.banner-work-title{
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.banner-float-description {
+    margin: 0px;
+    font-size:0.8rem;
+}
+
     /* Change Your Habits responsive*/
 .container-1 {
     flex-direction: column;
@@ -687,8 +758,8 @@ gap: 30px;
 .run-info{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
 }
 .run-info> h2, p,.run-btn{
     margin-bottom: 30px;
@@ -701,6 +772,7 @@ gap: 30px;
     font-size: 14px;
 }
 .run-info .run-btn{
+    align-self: center;
     background-color:#EC563E ;
     border: none;
     font-size: 1rem;
@@ -714,10 +786,13 @@ gap: 30px;
 
 .run-images img{
    border-radius: 18px;
-   transform: scale(0.6) translateY(-100px);
+   width: 100%;
+   object-fit: none;
+   object-position: 67% 28%;
+
 }
 
-
+   
 /* Bmi section */
 
 .bmi{
