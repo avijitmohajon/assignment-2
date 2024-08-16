@@ -494,13 +494,11 @@ body{
     flex-direction: column;
 }
 .grp-1{
-    width: 100%;
+    
     align-items: center;
     justify-items: center;
 }
 .grp-2{
-    height:300px;
-    width: 100%;
     align-items: center;
     justify-items: center;
 }
@@ -509,8 +507,7 @@ body{
     justify-items: center;
 }
 .trainer-image>img{
-    align-self: center;
-    justify-self: center;
+    
     height: 300px;
     width: 300px;
     border-radius: 10%;
